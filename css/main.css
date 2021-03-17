@@ -1,3 +1,4 @@
+/*-------------------------------------------------generique style-------------------------------------------------------------- */
 body
 {
     background-image: url("imageFond/fondBois2.jpg");
@@ -8,13 +9,22 @@ body
     color: black;
 }
 
+a
+{
+   color:  rgb(165, 53, 4);
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.555); 
+   font-weight: bold;
+}
+
+
+/*-------------------------------------------------Header -------------------------------------------------------------- */
 header
 {
     background-color: rgba(107, 60, 6, 0.356);
     height: 160px;
     margin-right: 120px ;
     margin-left: 120px ;
-    margin-bottom: 120px;
+    margin-bottom: 50px;
     border: 2px rgb(165, 53, 4) solid;
     border-radius: 10px;
     box-shadow: 6px 6px 0px black;
@@ -39,10 +49,11 @@ header
 .element3, .element4
 { 
     font-size: 1.5em;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
+/*-------------------------------------------------Sections home page-------------------------------------------------------------- */
 
 #conteneur3
 {
@@ -61,7 +72,6 @@ header
     border-radius: 10px;
     text-align: center;
     border: 2px black solid;
-
 }
 
 section h2
@@ -83,34 +93,41 @@ section em
 
 }
 
-a
-{
-    color:  rgb(165, 53, 4);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.555); 
-    font-weight: bold;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-img 
+section img 
 {
     border: 3px rgb(165, 53, 4) solid;
     
 }
 
 
+/*------------------------------------------------- Footer -------------------------------------------------------------- */
+
 footer
 {
     background-color: rgba(107, 60, 6, 0.356);
-    height: 200px;
-    margin: 120px ;
+    height: 120px;
+    margin-right: 120px ;
+    margin-left: 120px ;
+    margin-bottom: 50px;
+    border: 2px rgb(165, 53, 4) solid;
+    border-radius: 10px;
+    box-shadow: 6px 6px 0px black;
+    
 }
+
+ #conteneur4
+ {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+    
+ #conteneur4 a
+ {
+    font-size: 1.4em;
+ }
+
+ #conteneur4 p
+ {
+    font-size: 1.2em
+ }
