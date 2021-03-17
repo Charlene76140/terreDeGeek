@@ -1,51 +1,101 @@
 body
 {
-    background-image: url("imageFond/imageFond2.jpg");
+    background-image: url("imageFond/fondBois.jpg");
     background-size: cover;
     background-attachment: scroll;
     background-repeat: no-repeat;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, Arial, Helvetica, sans-serif, monospace;
     color: black;
+}
+
+header
+{
+    background-color: rgba(107, 60, 6, 0.548);
+    height: 160px;
+    margin-right: 120px ;
+    margin-left: 120px ;
+    margin-bottom: 120px;
+    border: 2px rgb(165, 53, 4) solid;
+}
+
+#conteneur1
+{
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.555);
+    padding-top: 20px;
+}
+
+#conteneur2
+{
+    display: flex;  
+    justify-content: flex-end;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.555); 
+}
+
+.element3, .element4
+{ 
+    font-size: 1.5em;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+
+#conteneur3
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-content: center;
 }
 
 .section
 {
-    background-color: rgba(122, 61, 18, 0.356);
-}
-
-
-#conteneur1
-{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    
-}
-
-.element
-{
-    border: 3px black solid;
-    font-size: large;
-    
-}
-
-h1{
+    background-color: rgba(107, 60, 6, 0.548);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 50%;
+    text-align: center;
+    border: 2px rgb(165, 53, 4) solid;
 
 }
 
 h2
 {
-    color:rgb(165, 53, 4);
+    color:rgb(0, 0, 0);
+    
     text-decoration: underline;
 }
 
-h3
-{
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
 
 img 
 {
-    border: 3px black solid;
+    border: 3px rgb(133,71,26) solid;
+}
+
+a
+{
+    color: black;
+}
+
+footer
+{
+    background-color: rgba(107, 60, 6, 0.356);
+    height: 200px;
+    margin: 120px ;
 }
