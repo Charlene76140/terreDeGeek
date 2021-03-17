@@ -1,6 +1,6 @@
 body
 {
-    background-image: url("imageFond/fondBois.jpg");
+    background-image: url("imageFond/fondBois2.jpg");
     background-size: cover;
     background-attachment: scroll;
     background-repeat: no-repeat;
@@ -10,12 +10,14 @@ body
 
 header
 {
-    background-color: rgba(107, 60, 6, 0.548);
+    background-color: rgba(107, 60, 6, 0.356);
     height: 160px;
     margin-right: 120px ;
     margin-left: 120px ;
     margin-bottom: 120px;
     border: 2px rgb(165, 53, 4) solid;
+    border-radius: 10px;
+    box-shadow: 6px 6px 0px black;
 }
 
 #conteneur1
@@ -53,24 +55,40 @@ header
 
 .section
 {
-    background-color: rgba(107, 60, 6, 0.548);
-    margin-top: 20px;
-    margin-bottom: 20px;
+    background-color: rgba(107, 60, 6, 0.356);
+    margin-bottom: 30px;
     width: 50%;
+    border-radius: 10px;
     text-align: center;
-    border: 2px rgb(165, 53, 4) solid;
+    border: 2px black solid;
 
 }
 
-h2
+section h2
 {
     color:rgb(0, 0, 0);
-    
     text-decoration: underline;
 }
 
+section p
+{
+    font-size: 1.4em;
+    text-align: center;
 
+}
 
+section em
+{
+    font-weight: bold;
+
+}
+
+a
+{
+    color:  rgb(165, 53, 4);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.555); 
+    font-weight: bold;
+}
 
 
 
@@ -85,13 +103,10 @@ h2
 
 img 
 {
-    border: 3px rgb(133,71,26) solid;
+    border: 3px rgb(165, 53, 4) solid;
+    
 }
 
-a
-{
-    color: black;
-}
 
 footer
 {
