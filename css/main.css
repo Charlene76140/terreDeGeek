@@ -67,6 +67,7 @@ header
 .section
 {
     background-color: rgba(107, 60, 6, 0.356);
+    box-shadow: 2px 2px 4px black;
     margin-bottom: 30px;
     width: 50%;
     border-radius: 10px;
@@ -105,10 +106,10 @@ section img
 footer
 {
     background-color: rgba(107, 60, 6, 0.356);
-    height: 120px;
+    height: 160px;
+    margin-top: 30px;
     margin-right: 120px ;
     margin-left: 120px ;
-    margin-bottom: 50px;
     border: 2px rgb(165, 53, 4) solid;
     border-radius: 10px;
     box-shadow: 6px 6px 0px black;
@@ -118,16 +119,23 @@ footer
  #conteneur4
  {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content:space-around;
     align-items: center;
  }
     
- #conteneur4 a
+.element8
  {
-    font-size: 1.4em;
+    display: flex;
+    font-size: 1.6em;
  }
 
- #conteneur4 p
+ .element7 p
  {
     font-size: 1.2em
+ }
+
+ .element7 h2
+ {
+    font-size: 1.6em;
  }
