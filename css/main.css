@@ -1,4 +1,285 @@
+/*-------------------------------------------------generique style-------------------------------------------------------------- */
+/*body background image covers the entire page, default font is "Courier new", font color in black*/
+body
+{
+    background-image: url("imageFond/fondBois2.jpg");
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    font-family: 'Courier New', Courier, Arial, Helvetica, sans-serif, monospace;
+    color: black;
+}
+
+/*by default the links "a" are in rgb (165,53,4), with shadow and in bold*/
+a
+{
+   color:  rgb(165, 53, 4);
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.555); 
+   font-weight: bold;
+}
+
+a:hover
+{
+   color:  rgb(0, 0, 0);
+   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.555); 
+   font-weight: bold;
+}
+
+/*copy right is aligned to the right of all pages*/
+.copyRight
+{
+    text-align: right;
+}
+/*-------------------------------------------------Header ---------------------------------------------------------------------- */
+/* header contains logo, title and navigation menu */
+header
+{
+    background-color: rgba(107, 60, 6, 0.356);
+    height: 160px;
+    margin-right: 120px ;
+    margin-left: 120px ;
+    margin-bottom: 50px;
+    border: 2px rgb(165, 53, 4) solid;
+    border-radius: 10px;
+    box-shadow: 6px 6px 0px black;
+}
+
+/* container 1, contains logo and title */
+#conteneur1
+{
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.555);
+    padding-top: 20px;
+}
+
+/* container 2, the navigation Menu */
+#conteneur2
+{
+    display: flex;  
+    justify-content: flex-end;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.555); 
+}
+
+/* element3 and element4, are "home page" and "who are we"  */
+.element3, .element4
+{ 
+    font-size: 1.5em;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/*-------------------------------------------------Sections home page-------------------------------------------------------------- */
+/* container 3, contains the sections */
+#conteneur3
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+/* default style of sections */
 .section
 {
-    
+    background-color: rgba(107, 60, 6, 0.356);
+    margin-bottom: 30px;
+    width: 60%;
+    text-align: center;
+    border: 2px black solid;
+    box-shadow: 2px 2px 4px black;
+    border-radius: 10px;
+}
+
+.section:hover
+{
+    background-color: rgba(107, 60, 6, 0.219);
+    margin-bottom: 30px;
+    width: 60%;
+    text-align: center;
+    border: 2px black solid;
+    box-shadow: 4px 4px 8px black;
+    border-radius: 10px;
+}
+
+/* default style H2 of sections */
+.section h2
+{
+    color:rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+/* default style P of sections */
+.section p
+{
+    font-size: 1.1em;
+    text-align: center;
+}
+/* default style em of sections */
+.section em
+{
+    font-weight: bold;
+}
+/* default style img of sections */
+.section img 
+{
+    border: 3px rgb(165, 53, 4) solid;
+}
+
+.section a
+{
+    font-size: 1.2em;
+}
+
+/*------------------------------------------------- pages Products -------------------------------------------------------------- */
+/* containerProduct, contains the products photo and technical description */
+#conteneurProduit
+{
+    background-color: rgba(107, 60, 6, 0.356);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    border: 2px black solid;
+    box-shadow: 2px 2px 4px black;
+    border-radius: 10px;
+    padding-bottom: 25px;
+}
+
+/* default style H2 of products */
+#conteneurProduit h2
+{
+    text-decoration: underline;
+    font-size: 1.8em;
+}
+/* default style img of products */
+#conteneurProduit img
+{
+    border: 2px rgb(165, 53, 4) solid
+}
+/* default style P of products */
+#conteneurProduit p
+{
+    font-size: 1.2em;
+}
+/* default style em of products */
+#conteneurProduit em
+{
+    font-weight: bold;
+}
+/* default style .e of products */
+#conteneurProduit .e
+{
+    background-color: rgba(107, 60, 6, 0.473);
+}
+/* default style H3 of products */
+#conteneurProduit h3
+{
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+/*------------------------------------------------- Who we are page -------------------------------------------------------------- */
+/* containerGeneral, contains the society description and team's photos with names */
+#conteneurGeneral
+{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(107, 60, 6, 0.356);
+    border: 2px black solid;
+    box-shadow: 2px 2px 4px black;
+    border-radius: 10px;
+    width: 700px;
+    margin: auto;
+}
+
+/* default style H2 and P of society description */
+.elementG1, .elementG2
+{
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* containerPhoto, contains the team's photos with names */
+#conteneurPhoto
+{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 600px;
+    margin: auto;
+}
+/* containerPhoto, contains photos with names */
+figure
+{
+    text-align: center;
+    border: 2px black solid;
+    box-shadow: 2px 2px 4px black;
+    border-radius: 10px;
+    font-weight: bold;
+}
+/*------------------------------------------------- Legal Notice -------------------------------------------------------------- */
+/* main, contains the title and the text of the legal notices */
+main
+{
+    background-color: rgba(107, 60, 6, 0.356);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-content: center;
+    border: 2px black solid;
+    box-shadow: 2px 2px 4px black;
+    border-radius: 10px;
+}
+/* style Title */
+.titreMentionL
+{
+    text-align: center;
+    text-decoration: underline;
+}
+/* style P */
+.pMentionL
+{
+    text-align: center;
+    width: 50%;
+}
+/*------------------------------------------------- Footer -------------------------------------------------------------- */
+/* footer, contains logo, contacts, legal notice and social's media logo */
+footer
+{
+    background-color: rgba(107, 60, 6, 0.356);
+    height: 160px;
+    margin-top: 30px;
+    margin-right: 120px ;
+    margin-left: 120px ;
+    border: 2px rgb(165, 53, 4) solid;
+    border-radius: 10px;
+    box-shadow: 6px 6px 0px black;
+}
+/* conteneur4, elements logo, contacts, legal notice and social's media logo */
+#conteneur4
+{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+ /* contact's style */
+.element8, .element9
+{
+    align-self:flex-end;
+}
+/* contact's style */
+.element7
+{
+    margin-left: 10px;
+}
+/* Logo's style */
+.element6
+{
+    margin-left: 10px;
 }
