@@ -76,8 +76,9 @@ header
 {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
+    align-items: center;
+    background-color: thistle;
+   
 }
 
 /* default style of sections */
@@ -90,6 +91,7 @@ header
     border: 2px black solid;
     box-shadow: 2px 2px 4px black;
     border-radius: 10px;
+    align-items: center;
 }
 
 .section:hover
