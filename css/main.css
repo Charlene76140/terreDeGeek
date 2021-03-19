@@ -18,12 +18,18 @@ a
    font-weight: bold;
 }
 
+a:hover
+{
+   color:  rgb(0, 0, 0);
+   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.555); 
+   font-weight: bold;
+}
+
 /*copy right is aligned to the right of all pages*/
 .copyRight
 {
     text-align: right;
 }
-
 /*-------------------------------------------------Header ---------------------------------------------------------------------- */
 /* header contains logo, title and navigation menu */
 header
@@ -83,6 +89,17 @@ header
     text-align: center;
     border: 2px black solid;
     box-shadow: 2px 2px 4px black;
+    border-radius: 10px;
+}
+
+.section:hover
+{
+    background-color: rgba(107, 60, 6, 0.219);
+    margin-bottom: 30px;
+    width: 60%;
+    text-align: center;
+    border: 2px black solid;
+    box-shadow: 4px 4px 8px black;
     border-radius: 10px;
 }
 
