@@ -8,6 +8,13 @@ body
     background-repeat: no-repeat;
     font-family: 'Courier New', Courier, Arial, Helvetica, sans-serif, monospace;
     color: black;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+html{
+    min-height: 100vh;
 }
 
 /*by default the links "a" are in rgb (165,53,4), with shadow and in bold*/
@@ -54,6 +61,11 @@ header
     padding-top: 20px;
 }
 
+.element2
+{
+    font-size: 1.3em;
+}
+
 /* container 2, the navigation Menu */
 #conteneur2
 {
@@ -76,8 +88,8 @@ header
 {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
+    align-items: center;
+   
 }
 
 /* default style of sections */
@@ -90,6 +102,7 @@ header
     border: 2px black solid;
     box-shadow: 2px 2px 4px black;
     border-radius: 10px;
+    align-items: center;
 }
 
 .section:hover
@@ -113,7 +126,7 @@ header
 /* default style P of sections */
 .section p
 {
-    font-size: 1.1em;
+    font-size: 1.4em;
     text-align: center;
 }
 /* default style em of sections */
@@ -129,7 +142,7 @@ header
 
 .section a
 {
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 /*------------------------------------------------- pages Products -------------------------------------------------------------- */
@@ -142,7 +155,7 @@ header
     justify-content: space-between;
     align-content: center;
     text-align: center;
-    width: 50%;
+    width: 60%;
     margin: auto;
     border: 2px black solid;
     box-shadow: 2px 2px 4px black;
@@ -164,7 +177,7 @@ header
 /* default style P of products */
 #conteneurProduit p
 {
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 /* default style em of products */
 #conteneurProduit em
@@ -174,6 +187,7 @@ header
 /* default style .e of products */
 #conteneurProduit .e
 {
+    font-size: 1.1em;
     background-color: rgba(107, 60, 6, 0.473);
 }
 /* default style H3 of products */
@@ -200,7 +214,7 @@ header
 .elementG1, .elementG2
 {
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 /* containerPhoto, contains the team's photos with names */
@@ -220,6 +234,11 @@ figure
     box-shadow: 2px 2px 4px black;
     border-radius: 10px;
     font-weight: bold;
+}
+
+figcaption
+{
+    font-size: 1.1em;
 }
 /*------------------------------------------------- Legal Notice -------------------------------------------------------------- */
 /* main, contains the title and the text of the legal notices */
@@ -253,12 +272,13 @@ footer
 {
     background-color: rgba(107, 60, 6, 0.356);
     height: 160px;
-    margin-top: 30px;
+    margin-top: 40px;
     margin-right: 120px ;
     margin-left: 120px ;
     border: 2px rgb(165, 53, 4) solid;
     border-radius: 10px;
     box-shadow: 6px 6px 0px black;
+    margin-bottom: 0;
 }
 /* conteneur4, elements logo, contacts, legal notice and social's media logo */
 #conteneur4
@@ -277,6 +297,11 @@ footer
 .element7
 {
     margin-left: 10px;
+}
+
+.element7 p
+{
+    font-size: 1.1em;
 }
 /* Logo's style */
 .element6
