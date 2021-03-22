@@ -23,54 +23,66 @@
 </head>
 
 <body>
-  <header>
-    <div id="conteneur1">
-      <div class = "element1"><img src= "favicon-96x96.png" alt = "Logo de l'entreprise"/></div>
-      <div class = "element2"><h1>TerreDeGeek SARL</h1></div>
-    </div>
-    
-    <nav>
-      <div id="conteneur2">
-        <div class= "element3"><a href ="index.html" > Accueil</a></div>
-        <div class= "element4"><a href ="QuiSommesNous.html"> Qui sommes-nous?</a></div>
-      </div>
-
+  <header class = "mainBackground">
+      <img src= "favicon-96x96.png" alt = "Logo de l'entreprise"/>
+      <h1>TerreDeGeek SARL</h1>
+      <p>Chez Terre de Geek, nous mettons un point d'honneur à vous aider pour trouver le meilleur produit, au meilleur prix... </p>
+  </header>     
+      
+    <nav class = "secondBackground">
+      <ul>
+        <li><a href ="index.html" > Accueil</a></li>
+        <li><a href ="QuiSommesNous.html"> Qui sommes-nous?</a></li>
+        <li><a href="#nousContacter"> Nous contacter</a></li>
+      </ul>
     </nav>
-  </header>      
-  
-  <div id="conteneur3">
-    <section class="section">
-      <h2>Ordinateur Invisible rose/noir</h2>
-      <p><a href="img/ordinateur_invisible.png"> <img src="img/ordinateur_invisible_mini.png" alt= "photo ordinateur 1"/></a></p>
-      <p>Cet ordinateur puissant est si mince et léger que vous ne vous rendez quasiement pas compte de sa présence. Pour seulement<em> 9 990 SimFlouz</em>!Pour découvrir ce produit<br/> 
-      <a href="produits1.html">Cliquez ici</a></p>
+
+       
+  <main>
+
+    <h2>Nos produits du moment</h2>
+    <section>
+      <h3>Ordinateur Invisible rose/noir</h3>
+      <a href="produits1.html"><img src="img/ordinateur_invisible_mini.png" alt= "photo ordinateur 1"/></a>
+      <p>Cet ordinateur puissant est si mince et léger que vous ne vous rendez quasiment pas compte de sa présence.
+         Pour seulement<em> 9 990 SimFlouz</em>!
+      </p>
     </section>
     
-    <section class="section">
-      <h2> Ordinateur immersif rouge</h2>
-      <p><a href="img/ordinateur_immersif.png"> <img src="img/ordinateur_immersif_mini.png" alt= "photo ordinateur 2"/></a></p>
-      <p>Laissez cet ordinateur haut de gamme s'emparer de vous et son prix aussi...<em>3 360 SimFlouz</em>.Pour découvrir ce produit<br/>
-      <a href="produits2.html">Cliquez ici</a></p>
+    <section>
+      <h3>Ordinateur immersif rouge</h3>
+      <a href="produits2.html"><img src="img/ordinateur_immersif_mini.png" alt= "photo ordinateur 2"/></a>
+      <p>Laissez cet ordinateur haut de gamme s'emparer de vous et son prix aussi...<em>3 360 SimFlouz</em>
+      </p>
     </section>
 
-    <section class="section">
-      <h2> Ordinateur personnalisable bleu</h2>
-      <p><a href="img/ordinateur_perso.png"> <img src="img/ordinateur_perso_mini.png" alt= "photo ordinateur 3"/></a></p>
+    <section>
+      <h3>Ordinateur personnalisable bleu</h3>
+      <a href="produits3.html"><img src="img/ordinateur_perso_mini.png" alt= "photo ordinateur 3"/></a>
       <p>Retrouvez toute vos fonctionnalités préférées de l'ordinateur portable, mais avec des couleurs plus fraîches et amusantes.<br/>
-      Son prix? <em>4 250 SimFlouz</em>... alors n'attendez pas! Pour découvrir ce produit <br/>
-     <a href="produits3.html">Cliquez ici</a></p>
+      Son prix? <em>4 250 SimFlouz</em>... alors n'attendez pas!
+     </p>
     </section>
-  </div>
+ 
+  </main>
 
 
-  <footer>
-    <div id ="conteneur4">
-      <div class = "element6"><img src= "favicon-96x96.png" alt = "Logo de l'entreprise"/></div>
-      <div class = "element7"><h2>Nous contacter</h2><p>15 rue des Alouettes, 27000 Evreux <br/>Tél : 0245648441<br/><a href="mailto: terre2geeekSarl@gmail.fr">terre2geeekSarl@gmail.fr</a></p></div>
-      <div class = "element8"><a href = "mentionsLegales.html"> Mentions legales</a></div>
-      <div class= "element9"><img src = "css/imageFond/logoTW.jpg" alt ="logo twitter"/><img src = "css/imageFond/logoFB.jpg" alt ="logo FB"/></div>
-    </div>
+  <footer class = "mainBackground">
+    <aside><a href = "mentionsLegales.html"> Mentions legales</a></aside>
+
+    <section>
+      <h3>Nous suivre sur les réseaux</h3>
+      <img src = "css/imageFond/logoTW.jpg" alt ="logo twitter"/>
+      <img src = "css/imageFond/logoFB.jpg" alt ="logo FB"/>
+    </section>
+
+    <section>
+      <h2 id="nousContacter">Nous contacter</h2>
+        <p>15 rue des Alouettes, 27000 Evreux <br/>Tél : 0245648441<br/>
+        <a href="mailto: terre2geeekSarl@gmail.fr">terre2geeekSarl@gmail.fr</a></p>
+    </section>
   </footer>
+
   <p class="copyRight"> © 03-2021 - Charlene Saint-Julien</p>
   
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
