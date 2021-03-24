@@ -88,7 +88,7 @@
      ========================================================================== */
   
   /*-------------------------------------------------generique rules-------------------------------------------------------------- */
-
+/* 
   .mainBackground{
     background-color: #2c2381;
     color: #CED3DC;
@@ -100,15 +100,77 @@
   
   ul{
     color:black;
-    list-style-type: none
+    list-style-type: none;
   }
 
   ul a{
     text-decoration: none;
   }
- 
+  */
+*{
+  margin: 0;
+}
 
-  
+main section{
+  background-color: rgb(171, 201, 202);
+  height: 33vh;
+}
+
+.div1 {
+  background-color: blueviolet;
+  display: flex;
+}
+
+.div2{
+  background-color: burlywood;
+}
+
+
+.div3{
+  display: none;
+  background-color: greenyellow;
+}
+
+.imageForComputer , .textForComputer{
+  display: none;
+}
+
+@media screen and (min-width: 768px){
+  section{
+    height: 50vh;
+  }
+  .general{
+    display: flex;
+  }
+
+  .div3{
+    display: block;
+  }
+}
+
+
+@media screen and (min-width: 1024px){
+  .imageForComputer, .textForComputer{
+    display: block;
+  }
+  .photos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .photoMobileAndPads{
+    display: none;
+  }
+  .div3{
+    display: none;
+  }
+}
+
+
+
+
+
 
   /* ==========================================================================
      Helper classes
