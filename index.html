@@ -15,117 +15,176 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Titillium+Web&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
-
+  
   <meta name="theme-color" content="#fafafa">
+
+  <script src="https://kit.fontawesome.com/6e3dce75fc.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-
-
   <header class = "mainBackground">
       <img src= "favicon-96x96.png" alt = "Logo de l'entreprise"/>
       <h1>TerreDeGeek SARL</h1>
-      <p>Chez Terre de Geek, nous mettons un point d'honneur à vous aider pour trouver le meilleur produit, au meilleur prix... </p>
-  </header>     
-      
-    <nav class = "secondBackground">
-      <ul>
-        <li><a href ="index.html" > Accueil</a></li>
-        <li><a href ="#" > Nos prestations</a></li>
-        <li><a href="#nousContacter"> Nous contacter</a></li>
-        <li><a href ="QuiSommesNous.html"> Qui sommes-nous?</a></li>
-        
-      </ul>
-    </nav>
+      <p class ="textForComputer">Chez Terre de Geek, nous mettons un point d'honneur à vous aider pour trouver le meilleur produit, au meilleur prix... </p>
 
+      <nav class = "secondBackground">
+        <ul class="menu">
+          <li><a href ="index.html">Accueil</a></li>
+          <li><a href ="#" > Prestations</a></li>
+          <li><a href="#nousContacter"> Contact</a></li>
+          <li><a href ="QuiSommesNous.html"> Qui sommes-nous?</a></li>
+        </ul>
+    </nav>
+  </header>  
        
   <main>
-    <h2>Nos produits du moment</h2>
-
-      <section>
-        <h3>Ordinateur Invisible rose/noir</h3>
+    <section>
+      <h2>Nos produits du moment</h2>
+      <div>
+        <article>
+          <h3>Ordinateur Invisible rose/noir</h3>
           
-        <div class="general">
-          <div class="div1">
-            
-              <article class= "photoMobileAndPads">
-                <img src="img/ordinateur_invisible_mini.png" alt= "photo ordinateur 1"/>
-              </article>
+          <div class="product">
+            <div class= "photoMobileAndPads">
+              <img src="img/ordinateur_invisible_mini.png" alt= "photo ordinateur 1"/>
+            </div>
 
-              <article>
-                <div class = "textForComputer"><p>bla bla bla uniquement pour le PC </p></div>
-              </article>
-
-              <article class = "imageForComputer">
+            <div class = "textForComputer">
+              <p>bla bla bla uniquement pour le PC </p>
+            </div>
+          
+            <div class = "imageForComputer">
                 <img src="img/ordinateur_invisible.png" alt= "photo ordinateur 1"/>
-              </article>
-          
+                <a href="produits1.html">Découvrir ce produit</a>
+            </div>
               
-              
-            <article>
-                <div><p>Cet ordinateur puissant est si mince et léger que vous ne vous rendez quasiment pas compte de sa présence.</p></div>
-                <div><em> Son prix : 9 990 SimFlouz</em></div>
-            </article>
+            <div class= "descriptionProduct">
+              <div><p>Cet ordinateur puissant est si mince et léger que vous ne vous rendrez quasiment pas compte de sa présence.</p></div>
+              <div class="textForPads">
+                <p>bla bla bla bla bla bla bla en plus </p>
+              </div>
 
+              <div><em> 9 990 SimFlouz</em></div>
+            </div>
           </div>
 
-          <div class= "div2">
+          <div class= "button">
             <a href="produits1.html">Découvrir ce produit</a>
           </div>
-        </div>
-
-        <div class="div3">
-          <p>blz bla bla bla bla </p>
-        </div>
+        </article>
+      <hr>
+        <article>
+          <h3>Ordinateur immersif rouge</h3>
           
-      </section>
+          <div class="product">
+            <div class= "photoMobileAndPads">
+              <img src="img/ordinateur_immersif_mini.png" alt= "photo ordinateur 2"/>
+            </div>
 
+            <div class = "textForComputer">
+              <p>bla bla bla uniquement pour le PC </p>
+            </div>
+          
+            <div class = "imageForComputer">
+              <img src="img/ordinateur_immersif.png" alt= "photo ordinateur 1"/>
+              <a href="produits2.html">Découvrir ce produit</a>
+            </div>
+              
+            <div class= "descriptionProduct">
+              <div><p>Laissez cet ordinateur haut de gamme s'emparer de vous et son prix aussi...</p></div>
+              <div class="textForPads">
+                <p>bla bla bla bla bla bla bla en plus </p>
+              </div>
 
+              <div><em> 3 600 SimFlouz</em></div>
+            </div>
+          </div>
 
-          <article>
-            <h3>Ordinateur immersif rouge</h3>
-            <img src="img/ordinateur_immersif_mini.png" alt= "photo ordinateur 2"/></a>
-            <p>Laissez cet ordinateur haut de gamme s'emparer de vous et son prix aussi...</p>
-            <p>3 360 SimFlouz</p>
-          </article>
-
-          <a href="produits2.html">Découvrir ce produit</a>
-
+          <div class= "button">
+            <a href="produits2.html">Découvrir ce produit</a>
+          </div>
+        </article>
+        <hr>
         <article>
           <h3>Ordinateur personnalisable bleu</h3>
-          </a><img src="img/ordinateur_perso_mini.png" alt= "photo ordinateur 3"/></a>
-          <p>Retrouvez toute vos fonctionnalités préférées de l'ordinateur portable, mais avec des couleurs plus fraîches et amusantes.<br/>
-          Son prix? <em>4 250 SimFlouz</em>... alors n'attendez pas!
-          </p>
+          
+          <div class="product">
+            <div class= "photoMobileAndPads">
+              <img src="img/ordinateur_perso_mini.png" alt= "photo ordinateur 3"/>
+            </div>
+
+            <div class = "textForComputer">
+              <p>bla bla bla uniquement pour le PC </p>
+            </div>
+          
+            <div class = "imageForComputer">
+              <img src="img/ordinateur_immersif.png" alt= "photo ordinateur 1"/>
+              <a href="produits3.html">Découvrir ce produit</a>
+            </div>
+              
+            <div class= "descriptionProduct">
+              <div><p>Retrouvez toute vos fonctionnalitées préférées de l'ordinateur portable, mais avec des couleurs plus fraîches et amusantes!</p></div>
+              <div class="textForPads">
+                <p>bla bla bla bla bla bla bla en plus </p>
+              </div>
+
+              <div><em> 4 250 SimFlouz</em></div>
+            </div>
+          </div>
+
+          <div class= "button">
+            <a href="produits3.html">Découvrir ce produit</a>
+          </div>
         </article>
-        <a href="produits3.html">Découvrir ce produit</a>
+        <hr>
       </div>
-      
+
     </section>
- 
   </main>
 
 
-  <footer class = "mainBackground">
-    <aside><a href = "mentionsLegales.html"> Mentions legales</a></aside>
+  <footer class="mainBackground">
+    <div class= "footer">
 
-    <section>
-      <h3>Nous suivre sur les réseaux</h3>
-      <img src = "css/imageFond/logoTW.jpg" alt ="logo twitter"/>
-      <img src = "css/imageFond/logoFB.jpg" alt ="logo FB"/>
-    </section>
+      <article class="logoForComputerAndPads">
+        <img src= "favicon-96x96.png" alt = "Logo de l'entreprise"/>
+      </article>
 
-    <section>
-      <h2 id="nousContacter">Nous contacter</h2>
-        <p>15 rue des Alouettes, 27000 Evreux <br/>Tél : 0245648441<br/>
-        <a href="mailto: terre2geeekSarl@gmail.fr">terre2geeekSarl@gmail.fr</a></p>
-    </section>
+      <article class="infos">
+        <h4>Infos</h4>
+          <div>
+            <p>Avis clients</p>
+            <p><a href = "mentionsLegales.html"> Mentions legales</a></p>
+          </div>
+      </article>
+
+      <article class = "forComputer">
+        <h4>Nos coordonnées</h4>
+        <p>15 rue des Alouettes, 27000 Evreux</p>
+        <p>Tél : 0245648441</p>
+        <p><a href="mailto: terre2geeekSarl@gmail.fr">terre2geeekSarl@gmail.fr</a></p>
+      </article>
+
+      <article class = "socialMedia">
+        <h4>Nous suivre</h4>
+          <div>
+            <p><i class="fab fa-twitter-square"></i>
+              <i class="fab fa-facebook-square"></i>
+              <i class="fab fa-instagram-square"></i></p>
+          </div>
+      </article>
+
+    </div>
+
   </footer>
 
   <p class="copyRight"> © 03-2021 - Charlene Saint-Julien</p>
+  
   
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>

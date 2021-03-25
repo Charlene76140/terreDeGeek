@@ -87,8 +87,23 @@
      Author's custom styles
      ========================================================================== */
   
-  /*-------------------------------------------------generique rules-------------------------------------------------------------- */
-/* 
+  /*-------------------------------------------------general rules-------------------------------------------------------------- */
+  *, h1, h2, h3, h4{
+    margin: 0;
+    padding: 0;
+    font-family:'Dosis', sans-serif;
+  }
+  
+  
+  body ul{
+    list-style-type: none;
+  }
+
+  body a{
+    text-decoration: none;
+  }
+
+/*-------------------------------------------------utilitary classes -------------------------------------------------------------- */
   .mainBackground{
     background-color: #2c2381;
     color: #CED3DC;
@@ -96,81 +111,156 @@
 
   .secondBackground{
     background-color:#CED3DC;
+    color: black;
+  }
+
+/*---------------------------------------------------------------------------------------------------------------------------------- */
+
+/*------Header code ---- */
+  header h1{
+    text-align: center;
+  }
+
+
+/*------Nav code mobile version---- */
+  nav{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu{
+    width: 95%;
+    display: flex;
+    align-items: space-between;
+  }
+
+  nav .menu li{
+    text-align: justify;
+    margin: 2%;
+  }
+
+/*------Main code mobile version ---- */
+
+  section h2{
+    color: #2c2381;
+    text-align: center;
+    margin-top: 5%;
+    border: 2px black solid;
+  }
+
+  section article{
+    width: 95%;
+    margin: auto;
+    margin-top: 5%;
+  }
+
+  hr {
+    border: none;
+    border-top: 3px double #333;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+  }
+  .product{
+    display: flex;
+    text-align: center;
+  }
+
+  article h3{
+    text-align: center;
+    margin-bottom: 5%;
+  }
+
+  .button{
+    background-color: #2c2381;
+    text-align: center;
+    border: 1px black solid;
+    width: 50%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    /* ajouter une modification visuel du bouton */
+  }
+
+  .button a{
+    color: white;
+  }
+
+  .button a:hover{
+    background-color: cornflowerblue;
+  }
+
+  .textForComputer, .imageForComputer,.textForPads{
+    display: none;
+  }
+
+  .copyRight{
+    font-size: 0.6em;
+  }
+/*------Footer code mobile version ---- */
+
+  footer{
+    margin-top: 10vh;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
-  ul{
-    color:black;
-    list-style-type: none;
-  }
-
-  ul a{
-    text-decoration: none;
-  }
-  */
-*{
-  margin: 0;
-}
-
-main section{
-  background-color: rgb(171, 201, 202);
-  height: 33vh;
-}
-
-.div1 {
-  background-color: blueviolet;
-  display: flex;
-}
-
-.div2{
-  background-color: burlywood;
-}
-
-
-.div3{
-  display: none;
-  background-color: greenyellow;
-}
-
-.imageForComputer , .textForComputer{
-  display: none;
-}
-
-@media screen and (min-width: 768px){
-  section{
-    height: 50vh;
-  }
-  .general{
+  .footer{
+    height: 100%;
+    width: 95%;
     display: flex;
-  }
-
-  .div3{
-    display: block;
-  }
-}
-
-
-@media screen and (min-width: 1024px){
-  .imageForComputer, .textForComputer{
-    display: block;
-  }
-  .photos{
-    display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: space-around;
+  }
+
+  footer a{
+    text-decoration: none;
+    color: #CED3DC;
+  }
+
+  i{
+    font-size: 50px;
+  }
+
+ .logoForComputerAndPads, .forComputer{
+   display: none;
+ }
+
+/*-------------------------------------------------media queries-------------------------------------------------------------- */
+
+/*------Media Query for Ipad ---- */
+  @media screen and (min-width: 768px){
+    .general{
+      height: 25vh;
+    }
+    .descriptionProduct, .photoMobileAndPads{
+      padding: 2%;
+    }
+    .textForPads{
+      display: block;
+    }
+    section h2{
+      font-size: 3em;
+    }
+    article h3{
+      font-size: 1.4em ;
+      text-align: center;
+    }
+  }
+
+/*------Media Query for desktop ---- */
+  @media screen and (min-width: 1024px){
     
   }
-  .photoMobileAndPads{
-    display: none;
-  }
-  .div3{
-    display: none;
-  }
-}
 
 
 
-
-
+ 
 
   /* ==========================================================================
      Helper classes
