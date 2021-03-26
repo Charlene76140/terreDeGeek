@@ -52,31 +52,49 @@
     </nav>
   </header>  
   
-  
   <main>
-    <div id= "productContainer">
-      <h2>Ordinateur personnalisable bleu</h2>
-      <div><img src="img/ordinateur_perso_mini.png" alt = "photo ordinateur 1"/></div>
-      <p>Retrouvez toute vos fonctionnalités préférées de l'ordinateur portable basique, 
-        mais avec des couleurs plus fraîches et amusantes. Oui, vous devez payer plus cher pour des belles couleurs... 
-         <em>4 250 SimFlouz</em>! Alors contactez-nous pour en parler!</p>
+    <form method="post" action="traitement.php">
+      <fieldset>
+          <legend><i class="far fa-address-card"></i>Vos coordonnées</legend><br/>
+          
+          <p><label for="lastname">Votre nom :</label><br/>
+          <input type="name" name="lastname" id="lastname" placeholder="Ex : Dupont" size="40" minlength="2" maxlength="40" required/></p>
+
+          <p><label for="firstname">Votre prénom :</label><br/>
+          <input type="name" name="firstname" id="firstname" placeholder="Ex : Jean" size="40" maxlength="40" required/></p>
+
+          <p><label for="phoneNumber">Votre numéro de téléphone :</label><br/>
+          <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="Ex : 0675.." size="40" maxlength="20"/></p>
+
+          <p><label for="email">Votre e-mail :</label><br/>
+          <input type="email" name="email" id="email" placeholder="Ex : dupont@tto.com" size="40" maxlength="50" required/></p>
+
+          <p><label for="age">Votre age :</label><br/>
+          <input type="number" name="number" id="age" size="30" maxlength="50" required/></p><br/>
+      </fieldset>
+
+      <fieldset>
+        <legend><i class="far fa-comment-alt"></i>Votre message</legend><br/>
+          <p>
+            <label for="objetContact">Choix du contact</lab><br/>
+              <select name="objetContact" id="objetContact" >
+                <option value ="choix"></option>
+                <option value ="information"> Information </option>
+                <option value ="reclamation"> Reclamation</option>
+                <option value ="reclamation"> Partenariat</option>
+                <option value ="reclamation"> Autre</option>
+              </select>
+          </p>
+
+          <p><textarea name="texte" id="texte" rows="5" cols="30" required></textarea></p>
+          <p><textarea name="texte" id="texte" rows="8" cols="40" required class="textareaForComputer"></textarea></p>
+      </fieldset>
+      
+      <div class ="">
+      <input type="submit" value="Envoyer" class="buttonInput"/>
+      </div>
+    </form>
     
-      <h3>Caractéristiques techniques</h3>
-      <p>- Divertissement : 9</p>
-      <p>- Evaluation de la consommation d'éléctricité : 11</p>
-      <p>- Amelioration de la compétence jeux vidéo</p>
-      <p>- Amelioration de la compétence programmation</p>
-      <p>- Amelioration de la compétence comédie</p>
-      <p>- Fiabilité : 6</p>
-
-      <h3>Informations complémentaire sur le produit</h3>
-      <p class="textForComputerAndPads">Sed (saepe enim redeo ad Scipionem, cuius omnis sermo erat de amicitia) querebatur, quod omnibus in rebus homines diligentiores essent; capras et oves quot quisque haberet, dicere posse, amicos quot haberet, non posse dicere et in illis quidem parandis adhibere curam, in amicis eligendis neglegentis esse nec habere quasi signa quaedam et notas, quibus eos qui ad amicitias essent idonei, iudicarent. Sunt igitur firmi et stabiles et constantes eligendi; cuius generis est magna penuria. Et iudicare difficile est sane nisi expertum; experiendum autem est in ipsa amicitia. Ita praecurrit amicitia iudicium tollitque experiendi potestatem.<br/>
-
-        pProcedente igitur mox tempore cum adventicium nihil inveniretur, relicta ora maritima in Lycaoniam adnexam Isauriae se contulerunt ibique densis intersaepientes itinera praetenturis provincialium et viatorum opibus pascebantur.<br/>
-        
-        Novitates autem si spem adferunt, ut tamquam in herbis non fallacibus fructus appareat, non sunt illae quidem repudiandae, vetustas tamen suo loco conservanda; maxima est enim vis vetustatis et consuetudinis. Quin in ipso equo, cuius modo feci mentionem, si nulla res impediat, nemo est, quin eo, quo consuevit, libentius utatur quam intractato et novo. Nec vero in hoc quod est animal, sed in iis etiam quae sunt inanima, consuetudo valet, cum locis ipsis delectemur, montuosis etiam et silvestribus, in quibus diutius commorati sumus.
-      </p>
-    </div>  
   </main>  
 
 

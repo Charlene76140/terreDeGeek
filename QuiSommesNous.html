@@ -15,65 +15,104 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Titillium+Web&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
-
-  <meta name="theme-color" content="#fafafa">
-</head>
   
+  <meta name="theme-color" content="#fafafa">
+
+  <script src="https://kit.fontawesome.com/6e3dce75fc.js" crossorigin="anonymous"></script>
+</head>
+
 <body>
+  <header class = "mainBackground">
+    <div class="logoAndSlogan">
+      <aside class="logoMobileAndPads">
+        <a href ="index.html"><img src= "favicon-96x96.png" alt = "Logo de l'entreprise"/></a>
+      </aside>
 
-  <header>
-    <div id="conteneur1">
-      <div class = "element1"><img src= "favicon-96x96.png" alt = "Logo de l'entreprise"/></div>
-      <div class = "element2"><h1>TerreDeGeek SARL</h1></div>
-    </div>
-      
-    <nav>
-      <div id="conteneur2">
-        <div class= "element3"><a href ="index.html" > Accueil</a></div>
-        <div class= "element4"><a href ="QuiSommesNous.html"> Qui sommes-nous?</a></div>
+      <aside class = "logoForComputer">
+        <a href ="index.html"><img src="ms-icon-144x144.png" alt= "logo de l'entreprise plus grand"/></a>
+      </aside>
+   
+      <div class="titleAndSlogan">
+        <h1>TerreDeGeek SARL</h1>
+        <p class ="sloganForComputerAndPads">Chez Terre de Geek, nous mettons un point d'honneur à vous aider pour trouver le meilleur produit, au meilleur prix... </p>
       </div>
-    </nav>
-  </header>      
-    
-  <div id="conteneurGeneral">
-    <div class = "elementG1"><h2> Qui sommes-nous?</h2></div>
-    <div class="elementG2"><p>TerreDeGeek SARL est une entreprise familiale de vente de produits électroniques (téléphonie,
-      informatique, produits dérivés etc.) dont le siège se situe à Evreux. Elle détient à l’heure actuelle 40 % du marché en Normandie.
-      Elle est notamment présente à Dieppe, Forge-les-eaux, Louviers et Alençon.
-      Quel est l’ADN de TerreDeGeek ? L’entreprise est née d’une volonté, proposer du matériel et des
-      produits dérivés de qualité dans un cadre jeune et dynamique. </p></div>
-    
-
-    <div id="conteneurPhoto">
-      <figure class="elementP1">
-      <img src="img/photo_Alexandre.png" alt = "photo Alexandre"/>
-      <figcaption> Alexandre DARMAIN, notre directeur.</figcaption>
-      </figure>
-      
-      <figure class="elementP2">
-      <img src="img/photo_Nathalie.png" alt = "photo Natalie"/>
-      <figcaption> Nathalie DESMARE, notre chargée de comm. </figcaption>
-      </figure>
-    
-
-      <figure class = "elementP3">
-      <img src="img/photo_Simon.png" alt = "photo Simon"/>
-      <figcaption> Simon DOE, notre conseiller en vente. </figcaption>
-      </figure>
-    </div> 
-  </div>
-
-  <footer>
-    <div id ="conteneur4">
-      <div class = "element6"><img src= "favicon-96x96.png" alt = "Logo de l'entreprise"/></div>
-      <div class = "element7"><h2>Nous contacter</h2><p>15 rue des Alouettes, 27000 Evreux <br/>Tél : 0245648441<br/><a href="mailto: terre2geeekSarl@gmail.fr">terre2geeekSarl@gmail.fr</a></p></div>
-      <div class = "element8"><a href = "mentionsLegales.html"> Mentions legales</a></div>
-      <div class= "element9"><img src = "css/imageFond/logoTW.jpg" alt ="logo twitter"/><img src = "css/imageFond/logoFB.jpg" alt ="logo FB"/></div>
     </div>
+    
+      <nav class = "secondBackground">
+        <ul class="menu">
+          <li><a href ="index.html">Accueil</a></li>
+          <li><a href ="prestations.html" > Prestations</a></li>
+          <li><a href="contact.html"> Contact</a></li>
+          <li><a href ="QuiSommesNous.html"> Qui sommes-nous?</a></li>
+        </ul>
+    </nav>
+  </header>  
+  
+  <main>
+    <div id="productContainer">
+      <h2> Qui sommes-nous?</h2>
+      <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/u60st3l_PbA" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+        </iframe>
+      </div>
+
+      <div class = "textWhoWeAre">
+        <p>TerreDeGeek SARL est une entreprise familiale de vente de produits électroniques (téléphonie,
+          informatique, produits dérivés etc.) dont le siège se situe à Evreux. Elle détient à l’heure actuelle 40 % du marché en Normandie.
+          Elle est notamment présente à Dieppe, Forge-les-eaux, Louviers et Alençon.
+          Quel est l’ADN de TerreDeGeek ? L’entreprise est née d’une volonté, proposer du matériel et des
+          produits dérivés de qualité dans un cadre jeune et dynamique. </p>
+
+        <p>Ardeo, mihi credite, Patres conscripti (id quod vosmet de me existimatis et facitis ipsi) incredibili quodam amore patriae,
+          qui me amor et subvenire olim impendentibus periculis maximis cum dimicatione capitis, et rursum, cum omnia tela undique esse 
+          intenta in patriam viderem, subire coegit atque excipere unum pro universis. Hic me meus in rem publicam animus pristinus 
+          ac perennis cum C. Caesare reducit, reconciliat, restituit in gratiam.</p> 
+      </div> 
+    </div> 
+  </main>
+
+
+ <footer class="mainBackground">
+    <div class= "footer">
+
+      <article class="logoFooterForComputerAndPads">
+        <img src= "favicon-96x96.png" alt = "Logo de l'entreprise"/>
+      </article>
+
+      <article class="infos">
+        <h4>Informations</h4>
+          <div>
+            <p>Avis clients</p>
+            <p><a href = "mentionsLegales.html"> Mentions legales</a></p>
+          </div>
+      </article>
+
+      <article class = "addressForComputer">
+        <h4>Nos coordonnées</h4>
+        <p>15 rue des Alouettes, 27000 Evreux</p>
+        <p><i class="fas fa-phone-square-alt"></i>Tél : 0245648441</p>
+        <p><i class="fas fa-at"></i><a href="mailto: terre2geeekSarl@gmail.fr">terre2geeekSarl@gmail.fr</a></p>
+      </article>
+
+      <article class = "socialMedia">
+        <h4>Nous suivre</h4>
+          <div>
+            <p><i class="fab fa-twitter-square"></i>
+              <i class="fab fa-facebook-square"></i>
+              <i class="fab fa-instagram-square"></i></p>
+          </div>
+      </article>
+
+    </div>
+
   </footer>
+
   <p class="copyRight"> © 03-2021 - Charlene Saint-Julien</p>
   
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
