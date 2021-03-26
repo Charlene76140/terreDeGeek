@@ -1,62 +1,230 @@
-<!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="UTF-8"/>
-    <title> TerreDeGeek_SARL</title>
-    <link rel="stylesheet" href="css/main.css"/>
-    <link rel="shortcut icon" href="favicon.ico"/>
-  </head>
+<!doctype html>
+<html class="no-js" lang="fr">
 
-  <body>
-    <header>
-      <div id="conteneur1">
-        <div class = "element1"><img src= "favicon-96x96.png" alt = "Logo de l'entreprise"/></div>
-        <div class = "element2"><h1>TerreDeGeek SARL</h1></div>
+<head>
+  <meta charset="utf-8">
+  <title>Terre de Geek</title>
+  <meta name="description" content="Le site terre de geek est un site de vente de produits informatiques">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  
+  <meta name="theme-color" content="#fafafa">
+
+  <script src="https://kit.fontawesome.com/6e3dce75fc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class = "mainBackground">
+    <div class="logoAndSlogan">
+      <aside class="logoMobileAndPads">
+        <a href ="index.html"><img src= "favicon-96x96.png" alt = "Logo de l'entreprise"/></a>
+      </aside>
+
+      <aside class = "logoForComputer">
+        <a href ="index.html"><img src="ms-icon-144x144.png" alt= "logo de l'entreprise plus grand"/></a>
+      </aside>
+   
+      <div class="titleAndSlogan">
+        <h1>TerreDeGeek SARL</h1>
+        <p class ="sloganForComputerAndPads">Chez Terre de Geek, nous mettons un point d'honneur à vous aider pour trouver le meilleur produit, au meilleur prix... </p>
       </div>
-      
-      <nav>
-        <div id="conteneur2">
-          <div class= "element3"><a href ="index.html" > Accueil</a></div>
-          <div class= "element4"><a href ="QuiSommesNous.html"> Qui sommes-nous?</a></div>
-        </div>
-
-      </nav>
-    </header>      
+    </div>
     
-    <div id="conteneur3">
-      <section class="section">
-        <h2>Ordinateur Invisible rose/noir</h2>
-        <p><a href="img/ordinateur_invisible.png"> <img src="img/ordinateur_invisible_mini.png" alt= "photo ordinateur 1"/></a></p>
-        <p>Cet ordinateur puissant est si mince et léger que vous ne vous rendez quasiement pas compte de sa présence. Pour seulement<em> 9 990 SimFlouz</em>!Pour découvrir ce produit<br/> 
-        <a href="produits1.html">Cliquez ici</a></p>
-      </section>
-      
-      <section class="section">
-        <h2> Ordinateur immersif rouge</h2>
-        <p><a href="img/ordinateur_immersif.png"> <img src="img/ordinateur_immersif_mini.png" alt= "photo ordinateur 2"/></a></p>
-        <p>Laissez cet ordinateur haut de gamme s'emparer de vous et son prix aussi...<em>3 360 SimFlouz</em>.Pour découvrir ce produit<br/>
-        <a href="produits2.html">Cliquez ici</a></p>
-      </section>
+      <nav class = "secondBackground">
+        <ul class="menu">
+          <li><a href ="index.html">Accueil</a></li>
+          <li><a href ="prestations.html" > Prestations</a></li>
+          <li><a href="contact.html"> Contact</a></li>
+          <li><a href ="QuiSommesNous.html"> Qui sommes-nous?</a></li>
+        </ul>
+    </nav>
+  </header>  
+       
+  <main>
+    <section>
+      <h2><i class="fas fa-bullhorn"></i>Nos produits du moment</h2>
+      <div>
+        <article>
+          <h3>Ordinateur Invisible rose/noir</h3>
+          
+          <div class="product">
+            <div class= "photoMobileAndPads">
+              <img src="img/ordinateur_invisible_mini.png" alt= "photo ordinateur 1"/>
+            </div>
 
-      <section class="section">
-        <h2> Ordinateur personnalisable bleu</h2>
-        <p><a href="img/ordinateur_perso.png"> <img src="img/ordinateur_perso_mini.png" alt= "photo ordinateur 3"/></a></p>
-        <p>Retrouvez toute vos fonctionnalités préférées de l'ordinateur portable, mais avec des couleurs plus fraîches et amusantes.<br/>
-        Son prix? <em>4 250 SimFlouz</em>... alors n'attendez pas! Pour découvrir ce produit <br/>
-       <a href="produits3.html">Cliquez ici</a></p>
-      </section>
+            
+            <div class = "textForComputer">
+              <ul>
+                <li>Divertissement : 10</li>
+                <li>Evaluation de la consommation d'éléctricité : 10</li>
+                <li>Amelioration de la compétence jeux vidéo</li>
+                <li>Amelioration de la compétence programmation</li>
+                <li>Incassable</li>
+              </ul>
+            </div>
+
+            <div class = "imageForComputer">
+                <img src="img/ordinateur_invisible.png" alt= "photo ordinateur 1"/>
+            </div>
+              
+            <div class= "descriptionProduct">
+              <div><p>Cet ordinateur puissant est si mince et léger que vous ne vous rendrez quasiment pas compte de sa présence.</p></div>
+              <div class="textForPads">
+                <p>In exitium morbosque processit praestrictis abditus sollemni in Caesare venisset. Repentes noctes seseque opimas etiam ad.praestrictis abditus sollemni in Caesare venisset</p>
+              </div>
+
+              <div><em> 9 990 SimFlouz</em></div>
+            </div>
+
+          </div>
+
+          <div class= "button">
+            <a href="produits1.html">Découvrir ce produit</a>
+          </div>
+        </article>
+      <hr>
+        <article>
+          <h3>Ordinateur immersif rouge</h3>
+          
+          <div class="product">
+            <div class= "photoMobileAndPads">
+              <img src="img/ordinateur_immersif_mini.png" alt= "photo ordinateur 2"/>
+            </div>
+
+            <div class = "textForComputer">
+              <ul>
+                <li>Divertissement : 8</li>
+                <li>Evaluation de la consommation d'éléctricité : 6</li>
+                <li>Amelioration de la compétence jeux vidéo</li>
+                <li>Amelioration de la compétence programmation</li>
+                <li>Amelioration de la compétence écriture</li>
+                <li>Fiabilité : 8</li>
+              </ul>
+            </div>
+          
+            <div class = "imageForComputer">
+              <img src="img/ordinateur_immersif.png" alt= "photo ordinateur 1"/>
+            </div>
+              
+            <div class= "descriptionProduct">
+              <div><p>Laissez cet ordinateur haut de gamme s'emparer de vous et son prix aussi...</p></div>
+              <div class="textForPads">
+                <p>Et adhibitae consilium eaque adhibeatur res sed ne faciamus res petamus cunctatio adhibeatur etiam ad.In exitium morbosque processit praestrictis abditus sollemni in Caesare venisset. </p>
+              </div>
+
+              <div><em> 3 600 SimFlouz</em></div>
+            </div>
+          </div>
+
+          <div class= "button">
+            <a href="produits2.html">Découvrir ce produit</a>
+          </div>
+        </article>
+        <hr>
+        <article>
+          <h3>Ordinateur personnalisable bleu</h3>
+          
+          <div class="product">
+            <div class= "photoMobileAndPads">
+              <img src="img/ordinateur_perso_mini.png" alt= "photo ordinateur 3"/>
+            </div>
+
+            <div class = "textForComputer">
+              <ul>
+                <li>Divertissement : 9</li>
+                <li>Evaluation de la consommation d'éléctricité : 11</li>
+                <li>Amelioration de la compétence jeux vidéo</li>
+                <li>Amelioration de la compétence programmation</li>
+                <li>Amelioration de la compétence comédie</li>
+                <li>Fiabilité : 6</li>
+              </ul>
+            </div>
+          
+            <div class = "imageForComputer">
+              <img src="img/ordinateur_perso.png" alt= "photo ordinateur 1"/>
+            </div>
+              
+            <div class= "descriptionProduct">
+              <div><p>Retrouvez toute vos fonctionnalitées préférées de l'ordinateur portable, mais avec des couleurs plus fraîches et amusantes!</p></div>
+              <div class="textForPads">
+                <p>Quam non futurum hodie sed.In exitium morbosque processit praestrictis abditus sollemni in Caesare venisset.</p>
+              </div>
+
+              <div><em> 4 250 SimFlouz</em></div>
+            </div>
+          </div>
+
+          <div class= "button">
+            <a href="produits3.html">Découvrir ce produit</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="mainBackground">
+    <div class= "footer">
+
+      <article class="logoFooterForComputerAndPads">
+        <img src= "favicon-96x96.png" alt = "Logo de l'entreprise"/>
+      </article>
+
+      <article class="infos">
+        <h4>Informations</h4>
+          <div>
+            <p>Avis clients</p>
+            <p><a href = "mentionsLegales.html"> Mentions legales</a></p>
+          </div>
+      </article>
+
+      <article class = "addressForComputer">
+        <h4>Nos coordonnées</h4>
+        <p>15 rue des Alouettes, 27000 Evreux</p>
+        <p><i class="fas fa-phone-square-alt"></i>Tél : 0245648441</p>
+        <p><i class="fas fa-at"></i><a href="mailto:terre2geeekSarl@gmail.fr">terre2geeekSarl@gmail.fr</a></p>
+      </article>
+
+      <article class = "socialMedia">
+        <h4>Nous suivre</h4>
+          <div>
+            <p><i class="fab fa-twitter-square"></i>
+              <i class="fab fa-facebook-square"></i>
+              <i class="fab fa-instagram-square"></i></p>
+          </div>
+      </article>
+
     </div>
 
+  </footer>
 
-    <footer>
-      <div id ="conteneur4">
-        <div class = "element6"><img src= "favicon-96x96.png" alt = "Logo de l'entreprise"/></div>
-        <div class = "element7"><h2>Nous contacter</h2><p>15 rue des Alouettes, 27000 Evreux <br/>Tél : 0245648441<br/><a href="mailto: terre2geeekSarl@gmail.fr">terre2geeekSarl@gmail.fr</a></p></div>
-        <div class = "element8"><a href = "mentionsLegales.html"> Mentions legales</a></div>
-        <div class= "element9"><img src = "css/imageFond/logoTW.jpg" alt ="logo twitter"/><img src = "css/imageFond/logoFB.jpg" alt ="logo FB"/></div>
-      </div>
-    </footer>
-    <p class="copyRight"> © 03-2021 - Charlene Saint-Julien</p>
-  </body>
-</html>    
+  <p class="copyRight"> © 03-2021 - Charlene Saint-Julien</p>
+  
+  
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
+
 
