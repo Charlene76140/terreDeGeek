@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Terre de Geek</title>
   <meta name="description" content="Le site terre de geek est un site de vente de produits informatiques">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -58,10 +58,10 @@
           <legend><i class="far fa-address-card"></i> Vos coordonnées</legend><br/>
           
           <p><label for="lastname">Votre nom :</label><br/>
-          <input type="name" name="lastname" id="lastname" placeholder="Ex : Dupont" size="40" minlength="2" maxlength="40" required/></p>
+          <input type="text" name="lastname" id="lastname" placeholder="Ex : Dupont" size="40" minlength="2" maxlength="40" required/></p>
 
           <p><label for="firstname">Votre prénom :</label><br/>
-          <input type="name" name="firstname" id="firstname" placeholder="Ex : Jean" size="40" maxlength="40" required/></p>
+          <input type="text" name="firstname" id="firstname" placeholder="Ex : Jean" size="40" maxlength="40" required/></p>
 
           <p><label for="phoneNumber">Votre numéro de téléphone :</label><br/>
           <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="Ex : 0675.." size="40" maxlength="20"/></p>
@@ -70,15 +70,15 @@
           <input type="email" name="email" id="email" placeholder="Ex : dupont@tto.com" size="40" maxlength="50" required/></p>
 
           <p><label for="age">Votre age :</label><br/>
-          <input type="number" name="number" id="age" size="30" maxlength="50" required/></p><br/>
+          <input type="number" name="number" id="age" required/></p><br/>
       </fieldset>
 
       <fieldset>
         <legend><i class="far fa-comment-alt"></i> Votre message</legend><br/>
           <p>
-            <label for="objetContact">Choix du contact</lab><br/>
-              <select name="objetContact" id="objetContact" >
-                <option value ="choix"></option>
+            <label for="objetContact">Choix du contact</label><br/>
+              <select name="objetContact" id="objetContact">
+                <option value ="choix">choix</option>
                 <option value ="information"> Information </option>
                 <option value ="reclamation"> Reclamation</option>
                 <option value ="reclamation"> Partenariat</option>
@@ -86,8 +86,7 @@
               </select>
           </p>
 
-          <p><textarea name="texte" id="texte" rows="5" cols="30" required></textarea></p>
-          <p><textarea name="texte" id="texte" rows="8" cols="40" required class="textareaForComputer"></textarea></p>
+          <p><textarea name="texte" id="texte" rows="8" cols="40" required></textarea></p>
       </fieldset>
       
       <div class ="">
@@ -117,7 +116,7 @@
         <h4>Nos coordonnées</h4>
         <p>15 rue des Alouettes, 27000 Evreux</p>
         <p><i class="fas fa-phone-square-alt"></i>Tél : 0245648441</p>
-        <p><i class="fas fa-at"></i><a href="mailto: terre2geeekSarl@gmail.fr">terre2geeekSarl@gmail.fr</a></p>
+        <p><i class="fas fa-at"></i><a href="mailto:terre2geeekSarl@gmail.fr">terre2geeekSarl@gmail.fr</a></p>
       </article>
 
       <article class = "socialMedia">
