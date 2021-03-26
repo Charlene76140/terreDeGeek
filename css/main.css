@@ -121,7 +121,7 @@
     text-align: center;
   }
 
-  .logoForComputer{
+  .logoForComputer, .sloganForComputerAndPads{
     display: none;
   }
 
@@ -208,6 +208,14 @@
     font-size: 0.6em;
   }
 
+  #productContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+    margin:auto;
+  }
+
 /*------Footer code mobile version ---- */
 
   footer{
@@ -259,7 +267,7 @@
     .titleAndSlogan p{
       font-size: 1.3em;
     }
-    .textForComputerAndPads{
+    .sloganForComputerAndPads{
       display: flex;
       width: 70%;
       margin: auto;
@@ -297,6 +305,15 @@
 
     .button{
       font-size: 1.5em;
+    }
+
+    #productContainer .textForComputerAndPads{
+      display: block;
+      width: 95%;
+    }
+
+    #productContainer h3, h2{
+      margin: 1% 0;
     }
 
     /* footer ipad version */
