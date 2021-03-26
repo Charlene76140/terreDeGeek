@@ -91,7 +91,7 @@
   *, h1, h2, h3, h4{
     margin: 0;
     padding: 0;
-    font-family:'Dosis', sans-serif;
+    font-family: 'Dosis', sans-serif;
   }
    
   body ul{
@@ -113,16 +113,16 @@
     background-color:#CED3DC;
     color: black;
   }
+  
 
 /*---------------------------------------------------------------------------------------------------------------------------------- */
 
 /*------Header code ---- */
-  
-
   header h1{
     text-align: center;
   }
 
+  
   .logoForComputer, .sloganForComputerAndPads{
     display: none;
   }
@@ -213,7 +213,7 @@
     font-size: 0.6em;
   }
 
-  #productContainer{
+  .productContainer{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -236,7 +236,6 @@
   legend{
     text-align: center;
     font-size: 1.2em;
-    text-decoration: underline;
     color: #2c2381;
     padding: 0 2% 0 2%;
   }
@@ -275,6 +274,27 @@
     height: 5vh;
     background-color: #CED3DC;
     color:#2c2381;
+  }
+
+ .pMentionL{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+  }
+
+  .pMentionL h2{
+    margin-bottom: 2%;
+  }
+  .test{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .test p{
+    text-align: center;
+    font-size: 1.2em;
   }
 
 /*------Footer code mobile version ---- */
@@ -385,12 +405,12 @@
       color: white;
     }
 
-    #productContainer .textForComputerAndPads{
+    .productContainer .textForComputerAndPads{
       display: block;
       width: 95%;
     }
 
-    #productContainer h3, h2{
+    .productContainer h3, h2{
       margin: 1% 0;
     }
 
@@ -414,7 +434,6 @@
     legend{
       text-align: center;
       font-size: 1.5em;
-      text-decoration: underline;
     }
     
     fieldset{
@@ -476,7 +495,7 @@
     }
 
     .logoAndSlogan p{
-      font-size: 1.3em;
+      font-size: 1.4em;
     }
 
     .logoMobileAndPads{
@@ -484,6 +503,10 @@
     }
     .logoForComputer{
       display: flex;
+    }
+
+    .titleAndSlogan h1{
+      font-size: 3em;
     }
 
     /* nav computer version */
