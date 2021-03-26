@@ -53,32 +53,51 @@
   </header>  
   
   <main>
-    <div class="productContainer">
-      <h2> Qui sommes-nous?</h2>
-      <div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/u60st3l_PbA" 
-        title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-        </iframe>
+    <form method="post" action="traitement.php">
+      <fieldset>
+          <legend><i class="far fa-address-card"></i> Vos coordonnées</legend><br/>
+          
+          <p><label for="lastname">Votre nom :</label><br/>
+          <input type="text" name="lastname" id="lastname" placeholder="Ex : Dupont" size="40" minlength="2" maxlength="40" required/></p>
+
+          <p><label for="firstname">Votre prénom :</label><br/>
+          <input type="text" name="firstname" id="firstname" placeholder="Ex : Jean" size="40" maxlength="40" required/></p>
+
+          <p><label for="phoneNumber">Votre numéro de téléphone :</label><br/>
+          <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="Ex : 0675.." size="40" maxlength="20"/></p>
+
+          <p><label for="email">Votre e-mail :</label><br/>
+          <input type="email" name="email" id="email" placeholder="Ex : dupont@tto.com" size="40" maxlength="50" required/></p>
+
+          <p><label for="age">Votre age :</label><br/>
+          <input type="number" name="number" id="age" required/></p><br/>
+      </fieldset>
+
+      <fieldset>
+        <legend><i class="far fa-comment-alt"></i> Votre message</legend><br/>
+          <p>
+            <label for="objetContact">Choix du contact</label><br/>
+              <select name="objetContact" id="objetContact">
+                <option value ="choix">choix</option>
+                <option value ="information"> Information </option>
+                <option value ="reclamation"> Reclamation</option>
+                <option value ="reclamation"> Partenariat</option>
+                <option value ="reclamation"> Autre</option>
+              </select>
+          </p>
+
+          <p><textarea name="texte" id="texte" rows="8" cols="40" required></textarea></p>
+      </fieldset>
+      
+      <div class ="">
+      <input type="submit" value="Envoyer" class="buttonInput"/>
       </div>
-
-      <div class = "textWhoWeAre">
-        <p>TerreDeGeek SARL est une entreprise familiale de vente de produits électroniques (téléphonie,
-          informatique, produits dérivés etc.) dont le siège se situe à Evreux. Elle détient à l’heure actuelle 40 % du marché en Normandie.
-          Elle est notamment présente à Dieppe, Forge-les-eaux, Louviers et Alençon.
-          Quel est l’ADN de TerreDeGeek ? L’entreprise est née d’une volonté, proposer du matériel et des
-          produits dérivés de qualité dans un cadre jeune et dynamique. </p>
-
-        <p>Ardeo, mihi credite, Patres conscripti (id quod vosmet de me existimatis et facitis ipsi) incredibili quodam amore patriae,
-          qui me amor et subvenire olim impendentibus periculis maximis cum dimicatione capitis, et rursum, cum omnia tela undique esse 
-          intenta in patriam viderem, subire coegit atque excipere unum pro universis. Hic me meus in rem publicam animus pristinus 
-          ac perennis cum C. Caesare reducit, reconciliat, restituit in gratiam.</p> 
-      </div> 
-    </div> 
-  </main>
+    </form>
+    
+  </main>  
 
 
- <footer class="mainBackground">
+  <footer class="mainBackground">
     <div class= "footer">
 
       <article class="logoFooterForComputerAndPads">
@@ -126,6 +145,6 @@
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
-  
+
 </html>    
 
