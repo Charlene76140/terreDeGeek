@@ -101,6 +101,7 @@
   body a{
     text-decoration: none;
     color: black;
+    padding: 5px;
   }
 
 /*-------------------------------------------------utilitary classes -------------------------------------------------------------- */
@@ -139,7 +140,6 @@
 
   nav .menu li{
     text-align: justify;
-    margin: 2%;
   }
 
 /*------Main code mobile version ---- */
@@ -517,6 +517,8 @@
       background-color: #2c2381;
       color: white;
       border-radius: 4px;
+      margin: 0;
+      padding: 5px;
     }
     
     /* main computer version */
