@@ -603,10 +603,6 @@
       font-size: 1.4em;
     }
 
-    textarea{
-      display: none;
-    }
-
     .textareaForComputer{
       margin-top: 3%;
       display: flex;
