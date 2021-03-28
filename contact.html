@@ -54,47 +54,50 @@
   </header>  
   
   <main>
-    <form method="post" action="traitement.php">
-      <fieldset>
-          <legend><i class="far fa-address-card"></i> Vos coordonnées</legend><br/>
-          
-          <p><label for="lastname">Votre nom :</label><br/>
-          <input type="text" name="lastname" id="lastname" placeholder="Ex : Dupont" size="40" minlength="2" maxlength="40" required/></p>
+    <div class="productContainer">
+      <h2>Contactez-nous! </h2>
+      <form method="post" action="traitement.php">
+        <fieldset>
+            <legend><i class="far fa-address-card"></i> Vos coordonnées</legend><br/>
+            
+            <p><label for="lastname">Votre nom :</label><br/>
+            <input type="text" name="lastname" id="lastname" placeholder="Ex : Dupont" size="40" minlength="2" maxlength="40" required/></p>
 
-          <p><label for="firstname">Votre prénom :</label><br/>
-          <input type="text" name="firstname" id="firstname" placeholder="Ex : Jean" size="40" maxlength="40" required/></p>
+            <p><label for="firstname">Votre prénom :</label><br/>
+            <input type="text" name="firstname" id="firstname" placeholder="Ex : Jean" size="40" maxlength="40" required/></p>
 
-          <p><label for="phoneNumber">Votre numéro de téléphone :</label><br/>
-          <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="Ex : 0675.." size="40" maxlength="20"/></p>
+            <p><label for="phoneNumber">Votre numéro de téléphone :</label><br/>
+            <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="Ex : 0675.." size="40" maxlength="20"/></p>
 
-          <p><label for="email">Votre e-mail :</label><br/>
-          <input type="email" name="email" id="email" placeholder="Ex : dupont@tto.com" size="40" maxlength="50" required/></p>
+            <p><label for="email">Votre e-mail :</label><br/>
+            <input type="email" name="email" id="email" placeholder="Ex : dupont@toto.com" size="40" maxlength="50" required/></p>
 
-          <p><label for="age">Votre age :</label><br/>
-          <input type="number" name="number" id="age" required/></p><br/>
-      </fieldset>
+            <p><label for="age">Votre age :</label><br/>
+            <input type="number" name="number" id="age" required/></p><br/>
+        </fieldset>
 
-      <fieldset>
-        <legend><i class="far fa-comment-alt"></i> Votre message</legend><br/>
-          <p>
-            <label for="objetContact">Choix du contact</label><br/>
-              <select name="objetContact" id="objetContact">
-                <option value ="choix">choix</option>
-                <option value ="information"> Information </option>
-                <option value ="reclamation"> Reclamation</option>
-                <option value ="reclamation"> Partenariat</option>
-                <option value ="reclamation"> Autre</option>
-              </select>
-          </p>
+        <fieldset>
+          <legend><i class="far fa-comment-alt"></i> Votre message</legend><br/>
+            <p>
+              <label for="objetContact">Objet de votre message</label><br/>
+                <select name="objetContact" id="objetContact">
+                  <option value ="choix">Choix</option>
+                  <option value ="information"> Information </option>
+                  <option value ="reclamation"> Reclamation</option>
+                  <option value ="reclamation"> Partenariat</option>
+                  <option value ="reclamation"> Autre</option>
+                </select>
+            </p>
 
-          <p><textarea name="texte" id="texte" rows="8" cols="40" required></textarea></p>
-      </fieldset>
+            <p><textarea name="texte" id="texte" placeholder="Tapez votre message ici..." rows="8" cols="40" required></textarea></p>
+        </fieldset>
+        
+        <div class ="">
+        <input type="submit" value="Envoyer" class="buttonInput"/>
+        </div>
       
-      <div class ="">
-      <input type="submit" value="Envoyer" class="buttonInput"/>
-      </div>
-    </form>
-    
+      </form>
+    </div>
   </main>  
 
 
