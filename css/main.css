@@ -113,16 +113,12 @@
     background-color:#CED3DC;
     color: black;
   }
-  
-
 /*---------------------------------------------------------------------------------------------------------------------------------- */
 
 /*------Header code ---- */
   header h1{
     text-align: center;
   }
-
-  
   .logoForComputer, .sloganForComputerAndPads{
     display: none;
   }
@@ -152,7 +148,7 @@
     color: #2c2381;
     text-align: center;
     margin: 5% 0;
-    border: 2px black solid;
+    border: 2px rgba(0, 0, 0, 0.63) solid;
   }
 
   section h2 i{
@@ -167,8 +163,8 @@
 
   hr {
     border: none;
-    border-top: 3px double #333;
-    color: #333;
+    border-top: 4px double rgba(0, 0, 0, 0.63);
+    color: rgba(0, 0, 0, 0.63);
     overflow: visible;
     height: 2px;
     margin: 0;
@@ -179,6 +175,9 @@
     text-align: center;
   }
 
+  em{
+    font-weight: bold;
+  }
   article h3{
     text-align: center;
     margin-bottom: 5%;
@@ -298,7 +297,6 @@
   }
 
 /*------Footer code mobile version ---- */
-
   footer{
     margin-top: 3vh;
     height: 20vh;
@@ -328,10 +326,9 @@
  .logoFooterForComputerAndPads, .addressForComputer{
    display: none;
  }
-
 /*-------------------------------------------------media queries-------------------------------------------------------------- */
 
-/*------Media Query for Ipad ---- */
+/*------Media Query for Ipad ------------------------------------------*/
   @media screen and (min-width: 768px){
     /* header ipad version */
     .logoAndSlogan{
@@ -487,7 +484,7 @@
     }
   }
 
-/*------Media Query for desktop ---- */
+/*------Media Query for desktop ------------------------------------------------ */
   @media screen and (min-width: 1024px){
     /* header computer version */
     .logoAndSlogan{
@@ -512,10 +509,16 @@
     /* nav computer version */
 
     .menu{
-      width: 50%;
+      width: 60%;
       margin: auto;
     }
 
+    .menu li a:hover {
+      background-color: #2c2381;
+      color: white;
+      border-radius: 4px;
+    }
+    
     /* main computer version */
     .photoMobileAndPads{
       display: none;
@@ -530,14 +533,13 @@
     
     section article{
       background-color: #ced3dcab;
+      position: relative;
     }
-    .product{
-      display: flex;
-      width: 100%;
-      justify-content: space-around;
-      align-content: center;
-      align-items:center;
+
+    section h2{
+      margin: 2% 0;
     }
+    
     .imageForComputer{
       display: flex;
       width: 33%;
@@ -546,6 +548,15 @@
     .imageForComputer img{
       width: 100%;
     }
+
+    .product{
+      display: flex;
+      flex-direction: row-reverse;
+      width: 100%;
+      justify-content: space-around;
+      align-content: center;
+      align-items:center;
+    }
     .textForComputer{
 
       width: 33%;
@@ -553,6 +564,7 @@
       display: flex;
       justify-content: center;
     }
+
     .descriptionProduct{
       width: 33%;
       padding: 0;
@@ -565,7 +577,11 @@
       padding : 0.2em;
       text-align: center;
       width: 30%;
-      margin: 5% 35% 5% 35%;
+      margin: 2% 35% 5% 35%;
+    }
+
+    .button:hover{
+      background-color: #414347ab;
     }
 
     .buttonInput{
@@ -581,11 +597,13 @@
 
     iframe{
       display: flex;
-      width: 50%;
-      margin: 3% 25%;
+      width: 40%;
+      margin: auto;
+      
     }
 
     .textWhoWeAre{
+      margin-top: 2%;
       font-size: 1.4em;
     }
 
@@ -608,7 +626,6 @@
       display: flex;
     }
 
-    
     .presta p{
       font-size: 1.4em;
     }
